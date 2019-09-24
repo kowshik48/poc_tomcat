@@ -5,12 +5,12 @@ pipeline{
 		}
 	}
 	stages{
-		stage('ansiable started'){
+		stage('ansiable trigger'){
 			steps{
 				sh 'echo "Started...!" '
 			}
 		}
-stage('terraform start'){
+stage('ansiable started'){
 			steps{
 				sh 'cd /home/ubuntu/ansible; sudo ansible-playbook -i ec2.py -u devops apache-tomcat.yml'
 			}

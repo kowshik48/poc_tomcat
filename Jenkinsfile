@@ -8,6 +8,7 @@ pipeline{
 		stage('ansiable trigger'){
 			steps{
 				sh 'echo "Started...!" '
+				sleep 300
 			}
 		}
 stage('ansiable started'){
